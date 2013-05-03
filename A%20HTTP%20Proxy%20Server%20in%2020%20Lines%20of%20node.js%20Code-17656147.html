@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="exports.css" rel='stylesheet'>
+<link href="exports.css" rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Random tech links</h1>
+<h2>
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="Easier%2520CSS-17846202">Previous</a>
+&nbsp; 
+<a href="index-19">Index</a>
+&nbsp; 
+<a href="Child%2520vs%2520school%2520and%2520multiple%2520type%2520of%2520intelligence-17655800">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>A HTTP Proxy Server in 20 Lines of node.js Code</h3>
+<div class='post_info'>
+<span class='post_time'>April 28 2010, 12:26 PM</span>
+<span class='author'>&nbsp;by Alexey Shamrin</span>
+</div>
+</div>
+<div class='post_body'><p><a href="http://catonmat.net/http-proxy-in-nodejs">A HTTP Proxy Server in 20 Lines of node.js Code</a> (via <a href="http://news.ycombinator.com/item?id=1301272">HN</a>):</p>
+<div class="CodeRay">
+  <div class="code"><pre>var http = require('http');
+
+http.createServer(function(request, response) {
+  var proxy = http.createClient(80, request.headers['host'])
+  var proxy_request = proxy.request(request.method, request.url, request.headers);
+  proxy_request.addListener('response', function (proxy_response) {
+    proxy_response.addListener('data', function(chunk) {
+      response.write(chunk);
+    });
+    proxy_response.addListener('end', function() {
+      response.end();
+    });
+    response.writeHead(proxy_response.statusCode, proxy_response.headers);
+  });
+  request.addListener('data', function(chunk) {
+    proxy_request.write(chunk);
+  });
+  request.addListener('end', function() {
+    proxy_request.end();
+  });
+}).listen(8080);</pre></div>
+</div>
+
+<p>Could be useful to <a href="http://megaflop.posterous.com/easy-to-config-http-proxy-for-windows">http proxy idea</a>.</p></div>
+<div class='post_responses'>
+<h4>109 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="exports.css" rel='stylesheet'>
+<link href="exports.css" rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Random tech links</h1>
+<h2>
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="more-steve-jobs-videos">Previous</a>
+&nbsp; 
+<a href="index-4">Index</a>
+&nbsp; 
+<a href="mathics">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>On MS Office formats</h3>
+<div class='post_info'>
+<span class='post_time'>June  5 2012,  2:06 PM</span>
+<span class='author'>&nbsp;by Alexey Shamrin</span>
+</div>
+</div>
+<div class='post_body'><p>Interesting <a href="http://news.ycombinator.com/item?id=4069177">discussion</a> about implementing Microsoft Office formats.</p>
+<p><a href="http://news.ycombinator.com/item?id=4069879">For example</a>:</p>
+<p>
+<p style="padding-left: 30px;">Having worked at Quickoffice years ago on the spreadsheet team, I can tell you that yes, it [seamless import of MS Office files] is really, really hard to do well.</p>
+<p style="padding-left: 30px;">People expect when they open their spreadsheet that the formulas they wrote on the desktop will provide the results they see on the desktop. Ok, well it's just math right? Yes, and no. Excel actually has a lot of bugs with the execution of their formulas, so to be accurate you have to emulate all the mistakes they make. You also have to discover these bugs yourself, as they are not conveniently documented somewhere.</p>
+<p style="padding-left: 30px;">I ended up writing a unit test framework using generated Excel spreadsheets containing permutations of formulas with every possible input, just so I could identify where these bugs might be happening. Then you have to reverse engineer WHY they happen in the first place, and also find out if this was something the Excel team fixed in later releases, or left in because they themselves could not break backwards compatibility.</p>
+<p style="padding-left: 30px;">And this was what I would consider a small problem for us back then. The biggest problem was always round-tripping of unsupported data. The Office file format is large, complex, and full of crap you wouldn't imagine supporting in a mobile product. However, your users expect that if they open a spreadsheet to change a number on their phone, when they save it and re-open it on the desktop all the fancy formatting and pivot tables still work and haven't been lost.</p>
+<p style="padding-left: 30px;">Anyways, this is a great purchase for Google and I congratulate all the guys who have put in the hard work to make Quickoffice the amazing product it is today.</p>
+<p>&nbsp;</p>
+</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>office</div>
+</div>
+<div class='post_responses'>
+<h4>25 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

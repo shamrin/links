@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="exports.css" rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Random tech links</h1>
+<h2>
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="index-21">Index</a>
+&nbsp; 
+<a href="14%2520Rules%2520for%2520Faster-Loading%2520Web%2520Sites%2520from%2520Steve%2520Souders-14804850">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Will single founders please stand up?</h3>
+<div class='post_info'>
+<span class='post_time'>March 29 2010, 11:43 AM</span>
+<span class='author'>&nbsp;by Alexey Shamrin</span>
+</div>
+</div>
+<div class='post_body'>Gabriel Weinberg (Duck Duck Go founder) on <a href="http://www.gabrielweinberg.com/blog/2010/01/will-single-founders-please-stand-up">single founders</a>. Comments must be interesting</div>
+<div class='post_responses'>
+<h4>75 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

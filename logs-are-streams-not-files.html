@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="exports.css" rel='stylesheet'>
+<link href="exports.css" rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Random tech links</h1>
+<h2>
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="cronwtf">Previous</a>
+&nbsp; 
+<a href="index-11">Index</a>
+&nbsp; 
+<a href="smallest-federated-wiki">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Logs Are Streams, Not Files</h3>
+<div class='post_info'>
+<span class='post_time'>August 26 2011,  6:17 AM</span>
+<span class='author'>&nbsp;by Alexey Shamrin</span>
+</div>
+</div>
+<div class='post_body'><div class="posterous_bookmarklet_entry">
+      <blockquote class="posterous_long_quote"><p>A program using <code>stdout</code> for logging can use syslog without needing to implement any syslog awareness into the program, by piping to the standard <code>logger</code> command available on all modern unixes:</p>
+
+<div class="CodeRay">
+  <div class="code"><div class="CodeRay">
+  <div class="code"><pre>$ mydaemon | logger</pre></div>
+</div>
+</div>
+</div>
+
+
+<p>Perhaps we want to split the stream and log to a local file as well as syslog:</p>
+
+<div class="CodeRay">
+  <div class="code"><div class="CodeRay">
+  <div class="code"><pre>$ mydaemon | tee /var/log/mydaemon.log | logger</pre></div>
+</div>
+</div>
+</div>
+
+
+<p>A program which uses <code>stdout</code> is equipped to log in a variety of ways without adding any weight to its codebase or configuration format.</p>
+</blockquote>
+
+<div class="posterous_quote_citation">via <a href="http://adam.heroku.com/past/2011/4/1/logs_are_streams_not_files/">adam.heroku.com</a></div>
+    <p>Via <a href="http://news.ycombinator.com/item?id=2396695">http://news.ycombinator.com/item?id=2396695</a>, which has an interesting comment about Google logging:</p><p>> Am I the only person that doesn't want logging to block or buffer?<br />If it's an error that you're logging the moment before you crash, then you probably want it to block.<br />At Google LOG(ERROR) blocks but LOG(INFO) doesn't, for this reason.</p></div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>webdev</div>
+</div>
+<div class='post_responses'>
+<h4>16 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href="exports.css" rel='stylesheet'>
+<link href="exports.css" rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>Random tech links</h1>
+<h2>
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="guide-to-where-your-cofounders-should-live-in">Previous</a>
+&nbsp; 
+<a href="index-16">Index</a>
+&nbsp; 
+<a href="come-a-little-closer-0">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Cross-site request forgery</h3>
+<div class='post_info'>
+<span class='post_time'>July 14 2010,  3:19 AM</span>
+<span class='author'>&nbsp;by Alexey Shamrin</span>
+</div>
+</div>
+<div class='post_body'><p>I have just learned about <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">Cross-site request forgery</a> attack.
+Quoting Wikipedia:</p>
+
+<blockquote class="posterous_medium_quote"><p>For example, one user, Bob, might be browsing a chat forum where another user, Mallory, has posted a message. Suppose that Mallory has crafted an HTML image element that references a script on Bob&rsquo;s bank&rsquo;s website (rather than an image file):</p></blockquote>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="tag">&lt;img</span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://bank.example/withdraw?account=bob</span><span class="content">&amp;</span><span class="content">amount=1000000</span><span class="content">&amp;</span><span class="content">for=mallory</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span></pre></div>
+</div>
+
+
+<p>The variant of this attack was <a href="http://blogoscoped.com/archive/2005-10-14-n81">used by</a> &ldquo;<a href="http://en.wikipedia.org/wiki/Samy_(XSS)">but most of all, Samy is
+my hero</a>&rdquo; MySpace worm.</p>
+
+<p>It&rsquo;s a different beast from a more traditional <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">Cross-site scripting</a></p>
+
+<p>(via <a href="http://www.tornadoweb.org/">Tornado</a> documentation, which offers a <a href="http://www.tornadoweb.org/documentation#cross-site-request-forgery-protection">protection</a>)</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>hack</div>
+</div>
+<div class='post_responses'>
+<h4>777 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
